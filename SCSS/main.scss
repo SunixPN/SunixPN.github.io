@@ -1,0 +1,17 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@import "header-style";
+@import "content-style";
+@import "footer-style";

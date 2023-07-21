@@ -1,0 +1,14 @@
+.foot {
+    display: flex;
+    background-color: $blue;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+
+    &__text {
+        text-align: center;
+        color: white;
+        letter-spacing: 2px;
+        @include adaptive-font (10, 17)
+    }
+}

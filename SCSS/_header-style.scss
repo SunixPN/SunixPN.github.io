@@ -1,0 +1,71 @@
+.navigation {
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__panel {
+        display: flex;
+        gap: 50px;
+
+    }
+    &__item {
+        padding: 15px 0 15px 0;
+    }
+}
+
+.block-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.6s;
+
+    &__icon {
+        @include adaptive-font(14, 20);
+        color: white;
+        margin-bottom: 5px;
+        text-shadow: 0 0 2px white;
+        background-color: $green;
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    &__href {
+        color: white;
+        letter-spacing: 2px;
+        transition: all 0.6s;
+        text-align: center;
+        transition: 0.6s;
+    }
+
+    &:hover {
+        transform: translateY(3px);
+
+        .block-item__href {
+            text-shadow: 0 0 3px white;
+        }
+
+    }
+}
+
+.href {
+    @include adaptive-font(10, 17);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:681px) {
+
+    .navigation {
+
+        &__panel {
+            gap: 20px;
+        }
+    }
+
+    .block-item {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}

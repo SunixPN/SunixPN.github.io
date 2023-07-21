@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/sun-icon.ico">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <header class="navigation">
+        <nav class="navigation__panel">
+            <div class="navigation__item block-item">
+                <i class="fa-solid fa-user block-item__icon"></i>
+                <a href="https://t.me/Fist_a" class="block-item__href href" target="_blank">Создатель</a>
+            </div>
+            <div class="navigation__item block-item">
+                <i class="fa-solid fa-cloud block-item__icon"></i>
+                <a href="https://openweathermap.org/" class="block-item__href href" target="_blank">Откуда данные о погоде</a>
+            </div>
+            <div class="navigation__item block-item">
+                <i class="fa-sharp fa-solid fa-diagram-project block-item__icon"></i>
+                <a href="https://github.com/SunixPN" class="block-item__href href" target="_blank">Другие проекты</a>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="content__weather">
+            <input class="content__search" type="text" placeholder="Введите название региона" tabindex="1" value="Минск">
+            <p class="error disable">Ошибка получения данных</p>
+            <img src="img/weather.png" alt="weather" class="content__icon">
+            <p class="content__temp">0</p>
+            <div class="content__info">
+                <span class="content__name">Минск</span>
+                <span class="content__date"></span>
+            </div>
+            <button class="content__btn btn" tabindex="2">Узнать погоду</button>
+        </section>
+        <section class="content__data">
+            <section class="preview">
+                <h1 class="preview__title">|</h1>
+                <p class="preview__sub">Сервис для просмотра данных о погоде в вашем регионе. Для того, чтобы начать нажмите на кнопку снизу и введите свой город или страну в специальном поле!</p>
+                <button class="preview__btn btn">Начать прямо сейчас</button>
+            </section>
+            <section class="weather-blocks">
+                <div class="info-block">
+                    <h5 class="info-block__title">Скорость ветра</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-wind info-block__icon"></i>
+                </div>
+                <div class="info-block">
+                    <h5 class="info-block__title">Минимальная температура</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-temperature-three-quarters info-block__icon"></i>
+                </div>
+                <div class="info-block">
+                    <h5 class="info-block__title">Максимальная температура</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-temperature-three-quarters info-block__icon"></i>
+                </div>
+                <div class="info-block">
+                    <h5 class="info-block__title">Влажность</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-water info-block__icon"></i>
+                </div>
+                <div class="info-block">
+                    <h5 class="info-block__title">Ощущается как</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-temperature-three-quarters info-block__icon"></i>
+                </div>
+                <div class="info-block">
+                    <h5 class="info-block__title">Порыв</h5>
+                    <h2 class="info-block__info">0</h2>
+                    <i class="fa-solid fa-wind info-block__icon"></i>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="foot">
+        <p class="foot__text">Остальные проекты можно посмотреть по ссылке в навигационной панели.<br> Все права защищены.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/6e312edec6.js" crossorigin="anonymous"></script>
+</body>
+</html>
