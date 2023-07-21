@@ -64,6 +64,7 @@ function getData (url) {
 function dataProcessing (promise) {
     promise
     .then (response => {
+        err.classList.add("disable")
         weatherLeftBlock.children[0].textContent = city
         weatherLeftBlock.children[3].textContent = response.data.main.temp
         weatherLeftBlock.children[4].firstElementChild.textContent = city
